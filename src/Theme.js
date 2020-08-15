@@ -1,9 +1,9 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import purple from '@material-ui/core/colors/purple';
 import green from '@material-ui/core/colors/green';
 import { yellow } from '@material-ui/core/colors';
 
-const Theme = createMuiTheme({
+let Theme = createMuiTheme({
   palette: {
     primary: {
       main: yellow[500],
@@ -13,8 +13,10 @@ const Theme = createMuiTheme({
     },
   },
   typography: {
-      fontFamily: 'sans-serif'
+      fontFamily: 'Lato'
   }
 });
+
+Theme = responsiveFontSizes(Theme);
 
 export default Theme;
