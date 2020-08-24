@@ -8,7 +8,6 @@ const useStyles = makeStyles({
     },
     majorText: {
         color: '#038C65',
-        fontWeight: 'bold'
     }
 
 });
@@ -16,9 +15,9 @@ const useStyles = makeStyles({
 const Landing = () => {
     const classes = useStyles();
     return (
-        <div>
+        <div style={{marginTop: '50px', marginBottom: '50px'}}>
             <Grid container justify="start">
-                <Grid item xl={2}></Grid>
+                <Grid item xl={2} lg={1}></Grid>
                 <Grid item>
                     <Typography variant="h2" className={classes.isaacText}>
                         Hi! I'm Isaac Tong
@@ -26,16 +25,25 @@ const Landing = () => {
                 </Grid>
                 <Grid item xl={2}></Grid>
             </Grid>
-
             <Grid container justify="start">
                 <Grid item xl={2}></Grid>
                 <Grid item>
                     <Typography variant='h6' className={classes.majorText}>
-                        Currently majoring in Computer Engineering at the University of Illinois at Urbana-Champaign
+                        I'm currently majoring in Computer Engineering at the University of Illinois at Urbana-Champaign
                     </Typography>
                 </Grid>
                 <Grid item xl={2}></Grid>
             </Grid>
+            <Grid container justify="start">
+                <Grid item xl={2}></Grid>
+                <Grid item>
+                    <Typography className={classes.majorText}>
+                        I enjoy programming, producing films and cooking
+                    </Typography>
+                </Grid>
+                <Grid item xl={2}></Grid>
+            </Grid>
+        
         </div>
     );
 };
